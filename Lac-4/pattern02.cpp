@@ -1,9 +1,9 @@
 /*
 
-        A A A A
-        B B B B
-        C C C C
-        D D D D
+    D
+    C D
+    B C D
+    A B C D
 
 */
 
@@ -21,9 +21,9 @@ int main(){
     {
         
         int j = 1;
-        while (j <= n)
+        while (j <= i)
         {   
-            char ch = 'A'+i-1;
+            char ch = 'A' + (n-i+j)-1;
             cout << ch << " ";
             j++;
         }

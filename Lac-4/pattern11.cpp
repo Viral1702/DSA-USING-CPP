@@ -1,9 +1,9 @@
 /*
 
-   *
-  **
- ***
-****
+        A A A A
+        B B B B
+        C C C C
+        D D D D
 
 */
 
@@ -16,24 +16,20 @@ int main(){
     cin >> n;
 
     int i = 1;
+
     while (i <= n)
     {
-        int space = (n-i);
-        while (space > 0)
-        {
-            cout << " ";
-            space--;
-        }
+        
         int j = 1;
-        while (j<=i)
-        {
-            cout << "*";
+        while (j <= n)
+        {   
+            char ch = 'A'+i-1;
+            cout << ch << " ";
             j++;
         }
         cout << endl;
         i++;
     }
-    
     
 
 }
